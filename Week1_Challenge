@@ -1,1 +1,5 @@
+function triArea(base, height) {
+	let triArea1 = (base * height) / 2;
+    return triArea1;
+}
 
