@@ -1,0 +1,23 @@
+function LongestWord(sen) { 
+  // replaces punction with blank
+let clean = sen.replace(/[^\w\s]/g,'');
+// splits each word word up that has been cleaned
+let cleanedWords = clean.split(' ');
+
+let longestWord = '';
+// itterates through the cleaned and split words
+for (let i = 0; i < cleanedWords.length; i++) {
+// adds them to an Array
+    let word = cleanedWords[i];
+  // conditional to determine if current word is longer than current word
+    if (word.length > longestWord.length) {
+      longestWord = word;
+  }
+}
+  // code goes here  
+  return longestWord; 
+
+}
+   
+// keep this function call here 
+console.log(LongestWord(readline()));
