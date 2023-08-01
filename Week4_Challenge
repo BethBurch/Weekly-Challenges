@@ -5,7 +5,7 @@ if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10
 function addtion(num) {
 let total = 0;
 for(let i = 0; i <= num; i++){
-total += num; }
+total += i; }
 
 return total;
 }
